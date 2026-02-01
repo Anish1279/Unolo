@@ -1,4 +1,3 @@
-// src/pages/ManagerDashboard.jsx
 import { useEffect, useRef, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Chart from 'chart.js/auto';
