@@ -1,4 +1,4 @@
-# RESEARCH.md
+# RESEARCH
 
 ## Real-Time Communication Approaches
 
