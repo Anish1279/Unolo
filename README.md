@@ -43,24 +43,24 @@ Frontend runs on: `http://localhost:5173`
 
 ```
 ├── backend/
-│   ├── config/          # Database configuration
-│   ├── middleware/      # Auth middleware
-│   ├── routes/          # API routes
-│   │   ├── auth.js      # Authentication routes
-│   │   ├── checkin.js   # Check-in/out routes
-│   │   ├── dashboard.js # Dashboard data routes
-│   │   └── reports.js   # Report generation routes (NEW)
-│   ├── scripts/         # Database init scripts
-│   └── server.js        # Express app entry
+│   ├── config/                 # Database configuration
+│   ├── middleware/             # Auth middleware
+│   ├── routes/                 # API routes
+│   │   ├── auth.js             # Authentication routes
+│   │   ├── checkin.js          # Check-in/out routes
+│   │   ├── dashboard.js        # Dashboard data routes
+│   │   └── reports.js          # Report generation routes (NEW)
+│   ├── scripts/                # Database init scripts
+│   └── server.js               # Express app entry
 ├── frontend/
 │   ├── src/
-│   │   ├── components/  # Reusable components
-│   │   ├── pages/       # Page components
-│   │   └── utils/       # API helpers
+│   │   ├── components/         # Reusable components
+│   │   ├── pages/              # Page components
+│   │   └── utils/              # API helpers
 │   └── index.html
-├── database/            # SQL schemas (reference only)
-├── BUG_FIXES.md         # Documentation of all bug fixes
-└── README.md            # This file
+├── database/                   # SQL schemas (reference only)
+├── BUG_FIXES.md                # Documentation of all bug fixes
+└── README.md                   # This file
 ```
 
 ## API Endpoints
@@ -75,10 +75,18 @@ Frontend runs on: `http://localhost:5173`
 - `PUT /api/checkin/checkout` - Checkout
 - `GET /api/checkin/history` - Get check-in history
 - `GET /api/checkin/active` - Get active check-in
+<img width="1904" height="942" alt="Screenshot 2026-02-01 091522" src="https://github.com/user-attachments/assets/b847265a-0055-443f-a562-0cd4f6d0c7ea" />
 
 ### Dashboard
 - `GET /api/dashboard/stats` - Manager stats
 - `GET /api/dashboard/employee` - Employee stats
+<img width="1913" height="939" alt="Screenshot 2026-02-01 091620" src="https://github.com/user-attachments/assets/dc2644f2-acc7-4532-8110-54cea480eb6e" />
+
+### ManagerDashboard
+- Provides **real-time visibility into team activity**, including daily check-ins, currently active employees, and recent performance trends, helping managers quickly understand what’s happening on the ground.
+
+- Uses **simple charts and visual summaries** to present check-in data over time and across team members, making it easy to spot patterns, workload distribution, and potential issues without going through raw data.
+<img width="1913" height="941" alt="Screenshot 2026-02-01 091657" src="https://github.com/user-attachments/assets/39eccb45-3a13-4f11-bda1-ee084c89d2d7" />
 
 ### Reports (NEW)
 - `GET /api/reports/daily-summary` - Daily summary report for managers
@@ -128,6 +136,7 @@ POST /api/checkin
 ```
 
 ---
+<img width="1909" height="939" alt="Screenshot 2026-02-01 091419" src="https://github.com/user-attachments/assets/8267855a-a34e-423c-a58f-978dbee9d88c" />
 
 ### Feature B: Daily Summary Report API
 
